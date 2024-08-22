@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bielo Design - Projetos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="rolagem.css">
+
+    <link rel="shortcut icon" type="imagex/png" href="/./img/Bielo.png">
+
+</head>
+<body  class=" overflow bg-[#1a1a1ae1]">
+    <header>
+
+       <!-- nav-menu -->
+        <nav class="z-10">
+       <div class=" grid grid-cols-3">
+           <ul class=" ml-10 mt-4 flex flex-row  h-20 gap-7">
+               <li>
+                   <a class="  font-kodchasan  hover:text-xl hover:underline hover:underline-offset-8 hover:text-[#EBFF00] transition-all  text-white text-lg" href="index.html">Início</a>
+               </li>
+               <li>
+                   <a class=" font-kodchasan hover:text-xl hover:underline hover:underline-offset-8 hover:text-[#EBFF00] transition-all  text-white text-lg" href="projetos.html">Projetos</a>
+               </li>
+               <li>
+                   <a class=" font-kodchasan  hover:text-xl hover:underline hover:underline-offset-8 hover:text-[#EBFF00] transition-all  text-white text-lg" href="Sobremim.html">Sobre mim</a>
+               </li>
+              
+           </ul>
+
+
+           <a href="#">
+               <h1 class=" hover:scale-125 hover:text-white transition-all font-kodchasan text-[#EBFF00]  font-mono text-3xl mx-auto my-4 w-fit block">
+                   BIELO DESIGN
+               </h1>
+           </a>
+
+       </div>
+    </header>
+    <div class="mx-auto container">
+    <main>
+        <section>
+            <img src="/./img/banner1v2.png" alt="Banner1"  class=" pt-10 w-full">
+
+            
+            
+    
+    <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+
+
+    <button onclick="mostrartudo()" type="button"  class=" text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Todas Categorias</button>
+    
+    <button onclick="mostrar1()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">3D</button>
+    
+    <button onclick="mostrar2()" type="button"   class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Manipulação de imagem</button>
+    
+    <button onclick="mostrar3()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Oscar 2023</button>
+    
+    <button onclick="mostrar4()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">VFX</button>
+
+
+    
+    <!--       GALERIA 1    -->
+ 
+    
+    <div class="galeria1 hidden glr">
+<div class=" mt-10 flex flex-wrap gap-5 justify-center">
+
+
+    <div >
+        <img class="h-auto max-w-2xl rounded-lg" src="/./img/Card1/ft1.png" alt="">
+    </div>
+    <div>
+        <img class="h-auto max-w-2xl  rounded-lg" src="/./img/Card1/ft2.png" alt="">
+    </div>
+
+    <div>
+        <img class="h-auto max-w-2xl  rounded-lg" src="/./img/Card1/ft3.png" alt="">
+
+        <caption>
+            <p class=" mt-6 text-gray-300 text-center">
+               Hugo Melo! <br> Personagem desenvolvido para estudos.
+           </p>
+
+          <div class="flex flex-row justify-center gap-5 mt-5">
+           <img class="h-20" src="/./img/iconssoftware/blender.png" alt="Blender icon">
+           <img class="h-16 shadow-xl" src="/./img/iconssoftware/photoshop.png" alt="">
+        </div>
+           </caption>
+        </div>
+           <!-- FIM HUGO MELO -->
+
+           <hr class="h-1 w-full bg-gray-100 rounded mb-10">
+
+           <!-- BAR 3D -->
+
+        <div>
+            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar1.png" alt="Bar1">
+        </div>
+
+        <div>
+            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar2.png" alt="bar2">
+        </div>
+
+        <div>
+            <img class=" mt-6 h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar3.png" alt="bar3">
+        </div>
+
+        <div>
+            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/barimage1.png" alt="bar4">
+        </div>
+
+        <div>
+            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar5.png" alt="bar5">
+        </div>
+
+        <div>
+            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar4.png" alt="bar6">
+        </div>
+
+        <div>
+        <caption class=" h-xl flex-row flex">
+            <p class=" mt-6 text-gray-300 text-center">
+                Bar Cenário 3D <br> Projeto realizado para Escola Saga.
+            </p>
+
+            <div class="mt-6 flex flex-row justify-center gap-5">
+                <img class="h-16" src="/img/iconssoftware/blender.png" alt="Icon blende">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/substance-3d-painter.png" alt="Icon substance-3d-painter">
+            </div>
+        </caption>
+    </div>
+
+
+    <!-- fim bar 3d -->
+
+    <hr class="h-1 w-full bg-gray-100 rounded mb-10">
+</div>
+</div>
+    <!---------------------  GALERIA 2 ----------------------------------->
+
+
+        <!-- EDIT 1 -->
+     <div class="galeria2 glr hidden">
+    <div class=" mt-10 flex flex-wrap gap-5 justify-center">
+
+       <div>
+            <img class="max-w-lg rounded-lg" src="/img/edicaodeimagem/1.png" alt="Art1">
+       </div>
+       <div>
+            <img class="max-w-lg rounded-lg" src="/img/edicaodeimagem/1.2.jpeg" alt="Art2">
+       </div>
+
+       <div class="w-full">
+        <caption>
+            <p class="mt-6 text-gray-300 text-center">
+                Portal Neutral <br>
+                Projeto realizado para estudo.
+            </p>
+
+        <div class="mx-auto flex justify-center mt-6">
+            <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+        </div>
+        </caption>
+
+        </div>
+        <!-- FIM -->
+        <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+
+
+        <!-- EDIT IMAGE 2 -->
+        <div class="mt-10 flex flex-wrap gap-5 justify-center">
+           
+            <div>
+                <img class="max-w-2xl mx-auto rounded-xl" src="/img/edicaodeimagem/2.jpg" alt="">
+                <p class="mt-6 text-gray-300 text-center">
+                    Penhasco Mágico <br>
+                    Projeto realizado para estudo.
+                </p>
+                <div class="mx-auto flex justify-center mt-6">
+                    <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+                </div>
+
+            </div>
+
+            <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+
+
+            <!-- Flyers -->
+
+         
+
+            <div>
+                <img class="max-w-md rounded-xl" src="/img/edicaodeimagem/4.png" alt="Art4">
+            </div>
+
+            
+            <div>
+                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/5.jpg" alt="Art4">
+            </div>
+            
+            <div>
+                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/6.png" alt="Art4">
+            </div>
+            
+            <div>
+                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/8.png" alt="Art4">
+            </div>
+
+            <div class="w-full">
+                <caption>
+                    <p class="mt-6 text-gray-300 text-center">
+                        Portal Neutral <br>
+                        Projeto realizado para estudo.
+                    </p>
+        
+                <div class="mx-auto flex justify-center mt-6">
+                    <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+                </div>
+                </caption>
+        
+                </div>
+
+                <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+
+                <!-- LOGOS -->
+        
+                <img class="max-w-xs rounded-xl" src="/img/edicaodeimagem/logo1.jpg" alt="Logo1">
+                <img class="max-w-xs rounded-xl" src="/img/edicaodeimagem/logo2.jpg" alt="Logo2">
+                <img class="max-w-xs rounded-xl" src="/img/scooby.png" alt="Logo3">
+                <img class="max-w-xs rounded-xl" src="/img/edicaodeimagem/9.png" alt="Logo4">
+
+                <div class="w-full">
+                    <caption>
+                        <p class="mt-6 text-gray-300 text-center">
+                            Logos <br>
+                            Projetos comerciais.
+                        </p>
+            
+                    <div class="mx-auto flex justify-center mt-6">
+                        <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+                    </div>
+                    </caption>
+            
+                    </div>
+
+
+                    <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+
+                </div>
+
+        </div>
+
+       </div>       
+
+    </div>
+
+
+      <!------------------- GALERIA 3  ---------------->
+
+
+    <div class="galeria3 hidden glr ">
+        <div class=" mt-10 flex flex-wrap gap-5 justify-center">
+
+            <div class="mx-auto flex flex-col">
+        <div>
+            <h2 class="w-full text-5xl font-oNNE text-yellow-400 underline text-center"> OSCAR 2023</h2>
+        </div>
+
+
+        <div class="max-w-xl mx-auto">
+            <p class="mt-6 text-gray-300 text-center"> Projeto desenvolvido pela escola E. E. Colônia dos Pescadores Caraguatatuba-sp <br> Diretor visual e Diretor do evento </p>
+        </div>
+
+    <div class=" mt-10 flex flex-wrap gap-5 justify-center">
+        <div>           
+                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/5.jpg" alt="Art4">  
+        </div>
+
+        <div>           
+            <img class="max-w-sm rounded-xl" src="/img/oscar/oscar1.jpg" alt="Art4">  
+        </div>
+
+        
+        <div>           
+            <img class="max-w-sm rounded-xl" src="/img/oscar/oscar2.jpg" alt="Art4">  
+        </div>
+
+        <iframe width="1280" height="720"
+        src="https://youtube.com/embed/jrGW-hAsl5I">
+        </iframe>
+
+        <div class="w-full">
+            <caption>
+                <p class="mt-6 text-gray-300 text-center">
+                 Filme Mami Wata<br>
+                    Projeto realizado para apresentação e concorrência ao Oscar2023 - Colônia dos Pescadores.
+                    <br> Prestado serviço de Editor de vídeo, Designer Gráfico e Diretor de Vídeo.
+                </p>
+    
+            <div class="mx-auto flex justify-center mt-6 gap-6">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/premiere-pro.png" alt="Icon premiere-pro">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/after-effects.png" alt="Icon after-effects">
+            </div>
+            </caption>
+    
+            </div>
+
+            <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+
+    </div>
+        
+
+    </div>
+    </div>
+</div>
+
+
+    <!-- FIM GALERIA 3 -->
+
+
+    <!-- Galeria 4 -->
+
+    <div class="galeria4 hidden glr ">
+        <div class=" mt-10 flex flex-wrap gap-5 justify-center">
+
+            <div>
+            <video class="max-w-sm mx-auto" controls="controls" >
+                
+                <source src="/img/Videos/Holograma.mp4" type="video/mp4">
+                <object data="" width="320" height="240">
+                <embed width="320" height="240" src="/img/Videos/Holograma.mp4">
+
+                
+                </object>
+            </video>
+            <caption>
+                <p class="mt-6 text-gray-300 text-center">
+                 Edição VFX para redes sociais
+                </p>
+    
+            <div class="mx-auto flex justify-center mt-6 gap-6">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/premiere-pro.png" alt="Icon premiere-pro">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/after-effects.png" alt="Icon after-effects">
+            </div>
+            </caption>
+
+
+        </div>
+
+        <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+
+        <div>
+            <video class="max-w-sm mx-auto" controls="controls" >
+                
+                <source src="/img/Videos/seanorth.mp4" type="video/mp4">
+                <object data="" width="320" height="240">
+                <embed width="320" height="240" src="/img/Videos/Holograma.mp4">
+
+                
+                </object>
+            </video>
+            <caption>
+                <p class="mt-6 text-gray-300 text-center">
+                 Edição flyer animado para Comércio local em Caraguatatuba-sp.
+                    <br> Sea North - Shopping Serramar
+                </p>
+    
+            <div class="mx-auto flex justify-center mt-6 gap-6">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/premiere-pro.png" alt="Icon premiere-pro">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/photoshop.png" alt="Icon photoshop">
+                <img class="h-16 shadow-xl" src="/img/iconssoftware/after-effects.png" alt="Icon after-effects">
+            </div>
+            </caption>
+
+
+        </div>
+
+
+        <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+
+        <!-- Fim videos -->
+
+
+        </div>    
+    </div>
+
+
+    </div>
+    </div>
+        </section>
+    </main>
+    </div>
+
+    <div class="mt-4 ">
+        <h2 class="text-[#ffffffa8] pb-20 font-Red text-center text-2xl" > <span class="text-[#EBFF00]"> Transforme sua visão em realidade </span> <br> Onde o design encontra a inovação, sua inspiração ganha vida. </h2>
+
+        <img src="/./img/globe.png" alt="Globe" class=" pb-[180px] mx-auto">
+    </div>
+
+
+    <footer>
+        <div class="mx-auto w-full container p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+              <div class="mb-6 md:mb-0">
+                  <a href="index.html" class="flex items-center">
+                      <img src="/img/Bielo.png" class="rounded-full h-12 me-3" alt="Site Logo" />
+                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BIELO DESIGN</span>
+                  </a>
+              </div>
+              <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Plataformas</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a target="_blank" href="https://www.behance.net/MonteiroDsgn" class="hover:underline">Behance</a>
+                          </li>
+                          <li>
+                              <a target="_blank" href="https://www.youtube.com/@hellts3781" class="hover:underline">Youtube</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Redes Sociais</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a target="_blank" href="https://github.com/Ubieeel" class="hover:underline ">Git Hub</a>
+                          </li>
+                          <li>
+                              <a target="_blank" href="https://www.instagram.com/bielo.design/" class="hover:underline">Instagram</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div>
+                      <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Menu</h2>
+                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                          <li class="mb-4">
+                              <a target="_blank" href="projetos.html" class="hover:underline">Projetos</a>
+                          </li>
+                          <li>
+                              <a target="_blank" href="Sobremim.html" class="hover:underline">Sobre Mim</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-t-gray-400 lg:my-8" />
+          
+          <div class="sm:flex sm:items-center sm:justify-between">
+              <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Bielo Design</a>. All Rights Reserved.
+              </span>
+              <div class=" flex mt-4 sm:justify-center sm:mt-0">
+                  <a target="_blank" href="https://github.com/Ubieeel" class="mt-[-2px] text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <img src="/./img/icons8-github-64.png" class=" hover:scale-110 w-5 h-5" alt="">                   
+                  </a>
+                 
+                  <a target="_blank" href="https://www.instagram.com/bielo.design/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                    <img src="/./img/instagram.png" class=" hover:scale-110 w-4 h-4" alt="">   
+                  </a>
+                  
+                  <a target="_blank" href="mailto:contatomonteirodsgn@gmail.com
+                  " class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                    <img src="/./img/email.png" class=" hover:scale-110 w-5 h-4" alt="">  
+                </a>
+                  
+                <a target="_blank" href="https://www.youtube.com/@Bielo.design" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                      <img src="/./img/YT.png" class="hover:scale-110 w-5 h-4" alt=""> 
+                  </a>
+                  
+                  <a  target="_blank" href="https://www.behance.net/MonteiroDsgn" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                     <img src="/./img/behance.png" class=" hover:scale-110 w-4 h-4" alt="">
+                  </a>
+              </div>
+          </div>
+        </div>
+            </footer>
+
+
+    <script type="text/javascript" src="gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+</body>
+</html>

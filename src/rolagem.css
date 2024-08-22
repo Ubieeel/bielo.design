@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+    }
+    
+    body::-webkit-scrollbar-track {
+    background: #F4F4F4;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+    background-color: #fcbb14;
+    border-radius: 10px;
+    border: 1px solid #F4F4F4;
+    }
+    
+    /* CSS PARA MUDAR O DESIGN DA BARRA DE ROLAGEM DO WOODMART: */
+    body::-webkit-scrollbar {
+    width: 12px;
+    }
+    
+    body::-webkit-scrollbar-track {
+    background: #202020;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+    background-color: #fffb00;
+    border-radius: 10px;
+    border: 2px solid #202020;
+    }
