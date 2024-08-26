@@ -16,8 +16,53 @@
 <body  class=" overflow bg-[#1a1a1ae1] ">
     <header>
 
+        
+            <button class="ml-6 lg:hidden" id="abrirbar" type="button" onclick="openbar()">
+            <img class=" w-11 top-6 mt-4 ml-" src="/./img/sidebaricon.png" alt="">
+            </button>
+       
+    
+    <div class=" hidden " id="abalateral">
+    <div class=" fixed z-50 top-0 min-h-screen flex flex-row bg-transparent">
+      <div class="flex flex-col w-72 bg-[#1a1a1ae1] rounded-r-3xl overflow-hidden">
+        <div class="flex items-center justify-center h-20 shadow-md">
+          <h1 class="text-3xl mr-10 font-kodchasan text-[#EBFF00]">Bielo Design</h1>
+    
+          <button type="button" onclick="clside()">
+             <p  class="text-white font-kodchasan text-4xl">x</p>
+          </button>
+    
+    
+        </div>
+        <ul class="-ml-10 flex flex-col py-4">
+          <li>
+            <a href="/./index.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+              <span class="text-xl font-medium text-white ml-20">Início</span>
+            </a>
+          </li>
+          <li>
+            <a href="projetos.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+              <span class=" ml-20 text-xl font-medium text-white">Projetos</span>
+            </a>
+          </li>
+          <li>
+            <a href="Sobremim.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+              <span class=" ml-20 text-xl font-medium text-white">Sobre mim</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    
+
+    
+
+
+
+
         <!-- nav-menu -->
-         <nav class="z-10">
+         <nav class="z-10 max-laptop:hidden">
         <div class=" grid grid-cols-3">
             <ul class=" ml-10 mt-4 flex flex-row  h-20 gap-7">
                 <li>
@@ -46,10 +91,10 @@
 
      <div class="mx-auto container  mt-10 flex flex-col">
         
-        <div class="w-2/4 mx-auto flex flex-col mb-20 ">
+        <div class="w-3/4 mx-auto flex flex-col mb-20 ">
 
             <figure>
-            <img class=" z-10 rounded-full max-w-sm mx-auto shadow-xl" src="/./img/Sobremim/me.jpg" alt="Me.png">
+            <img class=" z-10 rounded-full max-w-sm mx-auto shadow-xl max-laptop:w-[250px]  " src="/./img/Sobremim/me.jpg" alt="Me.png">
             </figure>
 
             
@@ -57,7 +102,7 @@
             <h1 class="z-10 font-kodchasan text- text-3xl text-[#EBFF00]   pb-16">Sobre mim:</h1>
 
             
-        <p class="z-20 font-kodchasan text-white text-xl">
+        <p class="z-20 font-kodchasan text-white text-xl  max-laptop:text-justify max-laptop:text-[12px]">
             Meu nome é Gabriel Monteiro. Sou Designer Gráfico há 1 ano e estou atuando como freelancer no momento. Sou muito observador e tenho grande carinho por praias. Amo ter momentos sozinhos para organizar minha mente e praticar minha criatividade com ideias e reflexões. Nasci em 2005 e ao longo da minha vida descobri um lado artístico e criativo em mim, após participar da competição "Frase mais criativa da BGS 2022". Surpreendentemente ganhei a competição, conquistando um sonho: um setup gamer com um valor estimado que minha família jamais teria condições de comprar. Assim, conheci a Escola Saga e venho me dedicando ao curso Start 5.0.
             <br><br>
             Com o curso, pude adquirir diversos conhecimentos e me aprofundei no mundo do design, apesar de já admirar a área e grande parte dos meus estudos serem autodidatas. Posteriormente, ingressei em um curso técnico no IFSP de Caraguatatuba, em "Informática para Internet", onde descobri uma nova paixão: a programação de sites! Hoje, cursando o técnico, estou realizando projetos de forma livre para obter mais conhecimento e experiência na área de design e também de desenvolvimento de sites.
@@ -69,26 +114,26 @@
 
         <h2 class="mx-auto text-xl text-white font-poppins mt-10"> Contato </h2>
 
-        <ul class="flex flex-row mx-auto gap-6">
+        <ul class="flex flex-row mx-auto gap-6 max-laptop:scale-90">
 
             <li>
                 <div class="mx-auto flex justify-center mt-6">
                     <a target="_blank" href="https://www.behance.net/MonteiroDsgn">
-                    <img class="h-16 shadow-xl" src="/img/socialmedias/behance.png" alt="Icon Behance">
+                    <img class="h-16 shadow-xl max-laptop:h-11" src="/img/socialmedias/behance.png" alt="Icon Behance">
                     </a>
                 </div>
             </li>
             <li>
                 <div class="mx-auto flex justify-center mt-6">
                     <a target="_blank" href="https://www.instagram.com/bielo.design/">
-                    <img class="h-16 shadow-xl" src="/img/socialmedias/instagram.png" alt="Icon Instagram">
+                    <img class="h-16 shadow-xl max-laptop:h-11" src="/img/socialmedias/instagram.png" alt="Icon Instagram">
                     </a>
                 </div>
             </li>
             <li>
                 <div class="mx-auto flex justify-center mt-6">
                     <a target="_blank" href="mailto:contatomonteirodsgn@gmail.com">
-                    <img class="h-16 shadow-xl" src="/img/socialmedias/email.png" alt="Icon Email">
+                    <img class="h-16 shadow-xl max-laptop:h-11" src="/img/socialmedias/email.png" alt="Icon Email">
                     </a>
                 </div>
             </li>
@@ -104,10 +149,10 @@
         <h1 class="z-10 mx-auto font-kodchasan text- text-4xl text-[#EBFF00]   pb-16">SETUP</h1>
 
         <figure>
-            <img class="max-w-4xl mx-auto rounded-xl shadow-xl mb-10" src="/img/Sobremim/Setup.jpg" alt="">
+            <img class="max-w-4xl mx-auto rounded-xl shadow-xl mb-10 max-laptop:w-80" src="/img/Sobremim/Setup.jpg" alt="">
 
             <figcaption>
-                <p class="z-20 font-kodchasan text-white text-xl text-center">
+                <p class="z-20 font-kodchasan text-white text-xl text-center max-laptop:scale-75">
                     <u>Este é meu ambiente de tabalho!</u> <br><br>
                     Especificações:<br>
                     NVIDIA GeForce RTX2060<br>
@@ -123,7 +168,7 @@
      </div>
      
        
-     <div class="mt-20 ">
+     <div class="mt-20  max-laptop:scale-75">
         <h2 class="text-[#ffffffa8] pb-20 font-Red text-center text-2xl" > <span class="text-[#EBFF00]"> Transforme sua visão em realidade </span> <br> Onde o design encontra a inovação, sua inspiração ganha vida. </h2>
 
         <img src="/./img/globe.png" alt="Globe" class=" pb-[180px] mx-auto">
@@ -210,6 +255,6 @@
           </div>
         </div>
             </footer>
-     
+            <script type="text/javascript" src="/./sidebar.js"></script>
 </body>
 </html>

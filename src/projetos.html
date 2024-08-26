@@ -16,8 +16,54 @@
 <body  class=" overflow bg-[#1a1a1ae1]">
     <header>
 
+        
+        <button class="ml-6 lg:hidden" id="abrirbar" type="button" onclick="openbar()">
+            <img class=" w-11 top-6 mt-4 ml-" src="/./img/sidebaricon.png" alt="">
+            </button>
+       
+    
+    <div class=" hidden " id="abalateral">
+    <div class=" fixed z-50 top-0 min-h-screen flex flex-row bg-transparent">
+      <div class="flex flex-col w-72 bg-[#1a1a1ae1] rounded-r-3xl overflow-hidden">
+        <div class="flex items-center justify-center h-20 shadow-md">
+          <h1 class="text-3xl mr-10 font-kodchasan text-[#EBFF00]">Bielo Design</h1>
+    
+          <button type="button" onclick="clside()">
+             <p  class="text-white font-kodchasan text-4xl">x</p>
+          </button>
+    
+    
+        </div>
+        <ul class="-ml-10 flex flex-col py-4">
+          <li>
+            <a href="/./index.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+              <span class="text-xl font-medium text-white ml-20">Início</span>
+            </a>
+          </li>
+          <li>
+            <a href="projetos.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+              <span class=" ml-20 text-xl font-medium text-white">Projetos</span>
+            </a>
+          </li>
+          <li>
+            <a href="Sobremim.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+              <span class=" ml-20 text-xl font-medium text-white">Sobre mim</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    
+
+
+        
+
+
+
+
        <!-- nav-menu -->
-        <nav class="z-10">
+        <nav class="z-10 max-laptop:hidden">
        <div class=" grid grid-cols-3">
            <ul class=" ml-10 mt-4 flex flex-row  h-20 gap-7">
                <li>
@@ -52,15 +98,15 @@
     <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
 
 
-    <button onclick="mostrartudo()" type="button"  class=" text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Todas Categorias</button>
+    <button onclick="mostrartudo()" type="button"  class=" text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-800 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Todas Categorias</button>
     
-    <button onclick="mostrar1()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">3D</button>
+    <button onclick="mostrar1()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-800 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">3D</button>
     
-    <button onclick="mostrar2()" type="button"   class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Manipulação de imagem</button>
+    <button onclick="mostrar2()" type="button"   class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-800 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Manipulação de imagem</button>
     
-    <button onclick="mostrar3()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Oscar 2023</button>
+    <button onclick="mostrar3()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-800 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">Oscar 2023</button>
     
-    <button onclick="mostrar4()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">VFX</button>
+    <button onclick="mostrar4()" type="button" class="text-gray-900 border hover:bg-white border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-800 dark:hover:border-gray-700 bg-transparent focus:ring-4 focus:outline-none focus:ring-gray-300  rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 hover:text-gray-700 dark:text-white dark:focus:ring-gray-800">VFX</button>
 
 
     
@@ -72,14 +118,14 @@
 
 
     <div >
-        <img class="h-auto max-w-2xl rounded-lg" src="/./img/Card1/ft1.png" alt="">
+        <img class="h-auto max-w-2xl rounded-lg max-laptop:w-[350px]" src="/./img/Card1/ft1.png" alt="">
     </div>
     <div>
-        <img class="h-auto max-w-2xl  rounded-lg" src="/./img/Card1/ft2.png" alt="">
+        <img class="h-auto max-w-2xl  rounded-lg max-laptop:w-[350px]" src="/./img/Card1/ft2.png" alt="">
     </div>
 
     <div>
-        <img class="h-auto max-w-2xl  rounded-lg" src="/./img/Card1/ft3.png" alt="">
+        <img class="h-auto max-w-2xl  rounded-lg max-laptop:w-[350px]" src="/./img/Card1/ft3.png" alt="">
 
         <caption>
             <p class=" mt-6 text-gray-300 text-center">
@@ -99,27 +145,27 @@
            <!-- BAR 3D -->
 
         <div>
-            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar1.png" alt="Bar1">
+            <img class="h-auto w-xl  rounded-lg max-laptop:w-[350px]" src="/./img/card2/bar1.png" alt="Bar1">
         </div>
 
         <div>
-            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar2.png" alt="bar2">
+            <img class="h-auto   rounded-lg max-tablet::w-[350px]" src="/./img/card2/bar2.png" alt="bar2">
         </div>
 
         <div>
-            <img class=" mt-6 h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar3.png" alt="bar3">
+            <img class=" mt-6 h-auto w-xl  rounded-lg max-laptop:w-[350px]" src="/./img/card2/bar3.png" alt="bar3">
         </div>
 
         <div>
-            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/barimage1.png" alt="bar4">
+            <img class="h-auto w-xl  rounded-lg max-laptop:w-[350px]" src="/./img/card2/barimage1.png" alt="bar4">
         </div>
 
         <div>
-            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar5.png" alt="bar5">
+            <img class="h-auto w-xl  rounded-lg max-laptop:w-[350px]" src="/./img/card2/bar5.png" alt="bar5">
         </div>
 
         <div>
-            <img class="h-auto max-w-2xl  rounded-lg" src="/./img/card2/bar4.png" alt="bar6">
+            <img class="h-auto max-w-2xl  rounded-lg max-laptop:w-[350px]" src="/./img/card2/bar4.png" alt="bar6">
         </div>
 
         <div>
@@ -150,10 +196,10 @@
     <div class=" mt-10 flex flex-wrap gap-5 justify-center">
 
        <div>
-            <img class="max-w-lg rounded-lg" src="/img/edicaodeimagem/1.png" alt="Art1">
+            <img class="max-w-lg rounded-lg max-laptop:max-w-sm" src="/img/edicaodeimagem/1.png" alt="Art1">
        </div>
        <div>
-            <img class="max-w-lg rounded-lg" src="/img/edicaodeimagem/1.2.jpeg" alt="Art2">
+            <img class="max-w-lg rounded-lg max-laptop:max-w-sm" src="/img/edicaodeimagem/1.2.jpeg" alt="Art2">
        </div>
 
        <div class="w-full">
@@ -177,7 +223,7 @@
         <div class="mt-10 flex flex-wrap gap-5 justify-center">
            
             <div>
-                <img class="max-w-2xl mx-auto rounded-xl" src="/img/edicaodeimagem/2.jpg" alt="">
+                <img class="max-w-2xl mx-auto rounded-xl max-laptop:max-w-sm" src="/img/edicaodeimagem/2.jpg" alt="">
                 <p class="mt-6 text-gray-300 text-center">
                     Penhasco Mágico <br>
                     Projeto realizado para estudo.
@@ -196,20 +242,20 @@
          
 
             <div>
-                <img class="max-w-md rounded-xl" src="/img/edicaodeimagem/4.png" alt="Art4">
+                <img class="max-w-md rounded-xl max-laptop:max-w-sm" src="/img/edicaodeimagem/4.png" alt="Art4">
             </div>
 
             
             <div>
-                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/5.jpg" alt="Art4">
+                <img class="max-w-md  rounded-xl max-laptop:max-w-sm" src="/img/edicaodeimagem/5.jpg" alt="Art4">
             </div>
             
             <div>
-                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/6.png" alt="Art4">
+                <img class="max-w-md  rounded-xl max-laptop:max-w-sm" src="/img/edicaodeimagem/6.png" alt="Art4">
             </div>
             
             <div>
-                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/8.png" alt="Art4">
+                <img class="max-w-md  rounded-xl max-laptop:max-w-sm" src="/img/edicaodeimagem/8.png" alt="Art4">
             </div>
 
             <div class="w-full">
@@ -264,7 +310,7 @@
       <!------------------- GALERIA 3  ---------------->
 
 
-    <div class="galeria3 hidden glr ">
+    <div class="galeria3 hidden glr">
         <div class=" mt-10 flex flex-wrap gap-5 justify-center">
 
             <div class="mx-auto flex flex-col">
@@ -277,18 +323,18 @@
             <p class="mt-6 text-gray-300 text-center"> Projeto desenvolvido pela escola E. E. Colônia dos Pescadores Caraguatatuba-sp <br> Diretor visual e Diretor do evento </p>
         </div>
 
-    <div class=" mt-10 flex flex-wrap gap-5 justify-center">
+    <div class=" mt-10 flex flex-wrap gap-5 mx-auto max-laptop:max-w-sm">
         <div>           
-                <img class="max-w-md  rounded-xl" src="/img/edicaodeimagem/5.jpg" alt="Art4">  
+                <img class="max-w-md  rounded-xl max-laptop:max-w-[350px]" src="/img/edicaodeimagem/5.jpg" alt="Art4">  
         </div>
 
         <div>           
-            <img class="max-w-sm rounded-xl" src="/img/oscar/oscar1.jpg" alt="Art4">  
+            <img class="max-w-sm rounded-xl max-laptop:max-w-[350px]" src="/img/oscar/oscar1.jpg" alt="Art4">  
         </div>
 
         
         <div>           
-            <img class="max-w-sm rounded-xl" src="/img/oscar/oscar2.jpg" alt="Art4">  
+            <img class="max-w-sm rounded-xl max-laptop:max-w-[350px] " src="/img/oscar/oscar2.jpg" alt="Art4">  
         </div>
 
         <iframe width="1280" height="720"
@@ -327,7 +373,7 @@
 
     <!-- Galeria 4 -->
 
-    <div class="galeria4 hidden glr ">
+    <div class="galeria4 hidden glr max-laptop:scale-75 max-laptop:-mt-60">
         <div class=" mt-10 flex flex-wrap gap-5 justify-center">
 
             <div>
@@ -384,7 +430,7 @@
         </div>
 
 
-        <hr class=" mt-6 h-1 w-full bg-gray-100 rounded mb-10">
+        <hr class=" mt-6 h-1 w-full bg-gray-100 rounded max-laptop:mt-00">
 
         <!-- Fim videos -->
 
@@ -399,7 +445,7 @@
     </main>
     </div>
 
-    <div class="mt-4 ">
+    <div class="mt-4 max-laptop:scale-75 ">
         <h2 class="text-[#ffffffa8] pb-20 font-Red text-center text-2xl" > <span class="text-[#EBFF00]"> Transforme sua visão em realidade </span> <br> Onde o design encontra a inovação, sua inspiração ganha vida. </h2>
 
         <img src="/./img/globe.png" alt="Globe" class=" pb-[180px] mx-auto">
@@ -483,7 +529,7 @@
         </div>
             </footer>
 
-
+    <script type="text/javascript" src="/sidebar.js"></script>
     <script type="text/javascript" src="gallery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>

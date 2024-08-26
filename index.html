@@ -16,13 +16,15 @@
 <body class="bg-[#1a1a1ae1]">
     <header>
 
-    <button id="abrirbar" type="button" onclick="openbar()">
-        <img class="absolute w-12 top-6 mt-4  ml-10" src="img/sidebaricon.png" alt="">
-    </button>
 
+    <div class="ml-6 lg:hidden">
+        <button class=" lg:hidden" id="abrirbar" type="button" onclick="openbar()">
+        <img class="fixed w-11 top-6 mt-4 ml-" src="img/sidebaricon.png" alt="">
+        </button>
+    </div>
 
-<div class="hidden" id="abalateral">
-<div class="fixed z-50 top-0 min-h-screen flex flex-row bg-transparent">
+<div class="hidden " id="abalateral">
+<div class=" fixed z-50 top-0 min-h-screen flex flex-row bg-transparent">
   <div class="flex flex-col w-72 bg-[#1a1a1ae1] rounded-r-3xl overflow-hidden">
     <div class="flex items-center justify-center h-20 shadow-md">
       <h1 class="text-3xl mr-10 font-kodchasan text-[#EBFF00]">Bielo Design</h1>
@@ -100,7 +102,7 @@
         <!-- Desktop -->
         <nav class=" max-laptop:hidden">
             
-            <il class="  text-xl text-gray-200 bottom-[150px] right-[200px] absolute text-right font-poppins list-none z-20">
+            <il class=" text-xl text-gray-200 bottom-[150px] right-[200px] absolute text-right font-poppins list-none z-20 max-desktop:right-[120px] max-desktop:bottom-[200px]">
                 <li>
                 <h3>Designer Gráfico</h3>
                 </li>
@@ -116,10 +118,10 @@
             </il>
 
 
-            <img src="/img/Eufoto.png" class=" absolute bottom-1 z-30 left-[20%]">
+            <img src="/img/Eufoto.png" class=" absolute bottom-1 z-30 left-[23%] max-desktop:left-10">
             
 
-            <img src="/./img/header/bonecomeu.png" alt="Icon my"  class="absolute bottom-[50px]  w-[250px] lg:block ">
+            <img src="/./img/header/bonecomeu.png" alt="Icon my"  class="max-desktop:hidden absolute bottom-[50px]  w-[250px] lg:block ">
 
             <img src="/./img/seta-para-baixo.png" alt="Seta"  class="z-40 absolute  max-w-16 bottom-1 left-[48%] animate-bounce">
 
@@ -144,12 +146,12 @@
 
     <section class=" flex mt-28">
         <div class=" mx-auto container">
-            <div class="  mb-28 h-[670px] bg-[#1A1A1A] shadow-2xl shadow-[#EBFF00] rounded-[60px]" >
+            <div class=" max-[450px]:w-80   mb-28 h-[670px] bg-[#1A1A1A]  mx-auto   shadow-2xl shadow-[#EBFF00] rounded-[60px]" >
 
-                <img src="/./img/Bielo.png " alt="LOGO" class=" relative  rounded-[80px] h-[280px] pt-8 pb-8 mx-auto">
+                <img src="/./img/Bielo.png " alt="LOGO" class=" max-laptop:w-[160px] max-laptop:h-[220px] relative  rounded-[80px] h-[280px] pt-8 pb-8 mx-auto">
 
                 <figcaption>
-                    <p class="mx-[68px] pt-[50px] text-xl font-poppins text-center  text-white "> Bem vindo ao meu portifólio! <br>
+                    <p class="max-tablet:text-sm  mx-[68px] pt-[50px] lg:text-xl font-poppins text-center  text-white "> Bem vindo ao meu portifólio! <br>
                         Meu nome é Gabriel de Almeida Monteiro, e sou um designer apaixonado por criar experiências visuais
                         inovadoras e funcionais. Com um foco especial em Manipulação de imagem, Design gráfico, UX/UI, meu trabalho combina
                         criatividade, técnica e uma abordagem centrada no usuário para alcançar resultados
@@ -157,19 +159,19 @@
                 </figcaption>
             </div>
         
-            <img src="/./img/banner1v2.png" alt="Banner1"  class=" pt-10 w-full">
+            <img src="/./img/banner1v2.png" alt="Banner1"  class=" max-laptop:scale-100 pt-10 w-full">
 
         
 
         <div class="w-full flex" >
 
-            <button class="animate-bounce shadow-lg shadow-yellow-50 mb-36 mx-auto w-max text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 rounded-lg text-sm px-5 py-2.5 text-center " type="button">
+            <button class="max-laptop:mt-20   animate-bounce shadow-lg shadow-yellow-50 mb-36 mx-auto w-max text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 rounded-lg text-sm px-5 py-2.5 text-center " type="button">
                 <a href="/src/projetos.html" class=" font-oNNE text-3xl ">ACESSAR PROJETOS</a>
             </button>
-            <img src="/./img/seta.png"  class=" animate-ping w-5 absolute left-[53%] top-[2510px] z-40" alt="">
+            <img src="/./img/seta.png"  class="max-laptop:top-[1900px] max animate-ping w-5 absolute left-[53%] desktop:top-[2410px] z-40" alt="">
         </div>
         
-        <div class="mt-4 ">
+        <div class="max-laptop:scale-75 mt-4 ">
             <h2 class="text-[#ffffffa8] pb-20 font-Red text-center text-2xl" > <span class="text-[#EBFF00]"> Transforme sua visão em realidade </span> <br> Onde o design encontra a inovação, sua inspiração ganha vida. </h2>
 
             <img src="/./img/globe.png" alt="Globe" class=" pb-[180px] mx-auto">
