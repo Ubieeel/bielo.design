@@ -7,6 +7,7 @@ const galeria3 = document.querySelector('.galeria3');
 
 const galeria4 = document.querySelector('.galeria4');
 
+
 const galeriason = document.querySelectorAll('.visible');
 
 const galerias = document.querySelectorAll('.glr');

@@ -8,13 +8,69 @@
     <link rel="shortcut icon" type="imagex/png" href="/./img/Bielo.png">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
     <link href="src/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="rolagem.css">
+    <link rel="stylesheet" href="src/rolagem.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+
+
 </head>
 <body class="bg-[#1a1a1ae1]">
     <header>
 
+    <button id="abrirbar" type="button" onclick="openbar()">
+        <img class="absolute w-12 top-6 mt-4  ml-10" src="img/sidebaricon.png" alt="">
+    </button>
+
+
+<div class="hidden" id="abalateral">
+<div class="fixed z-50 top-0 min-h-screen flex flex-row bg-transparent">
+  <div class="flex flex-col w-72 bg-[#1a1a1ae1] rounded-r-3xl overflow-hidden">
+    <div class="flex items-center justify-center h-20 shadow-md">
+      <h1 class="text-3xl mr-10 font-kodchasan text-[#EBFF00]">Bielo Design</h1>
+
+      <button type="button" onclick="clside()">
+         <p  class="text-white font-kodchasan text-4xl">x</p>
+      </button>
+
+
+    </div>
+    <ul class="-ml-10 flex flex-col py-4">
+      <li>
+        <a href="index.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+          <span class="text-xl font-medium text-white ml-20">Início</span>
+        </a>
+      </li>
+      <li>
+        <a href="src/projetos.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+          <span class=" ml-20 text-xl font-medium text-white">Projetos</span>
+        </a>
+      </li>
+      <li>
+        <a href="src/Sobremim.html" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
+          <span class=" ml-20 text-xl font-medium text-white">Sobre mim</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+        
         <!-- nav-menu -->
-         <nav class="z-10">
+
+        
+
+
+
+
+         <nav class="z-10 max-laptop:hidden">
         <div class=" grid grid-cols-3">
             <ul class=" ml-10 mt-4 flex flex-row  h-20 gap-7">
                 <li>
@@ -41,7 +97,9 @@
 
 <!-- initial-->
      <main>
-        <nav>
+        <!-- Desktop -->
+        <nav class=" max-laptop:hidden">
+            
             <il class="  text-xl text-gray-200 bottom-[150px] right-[200px] absolute text-right font-poppins list-none z-20">
                 <li>
                 <h3>Designer Gráfico</h3>
@@ -58,19 +116,31 @@
             </il>
 
 
-            <img src="/img/Eufoto.png" class=" left-[23%] absolute bottom-1 z-30 mx-auto ">
+            <img src="/img/Eufoto.png" class=" absolute bottom-1 z-30 left-[20%]">
             
-            <img src="/./img/header/bonecomeu.png" alt="Icon my"  class="absolute bottom-[50px]  w-[250px]">
+
+            <img src="/./img/header/bonecomeu.png" alt="Icon my"  class="absolute bottom-[50px]  w-[250px] lg:block ">
 
             <img src="/./img/seta-para-baixo.png" alt="Seta"  class="z-40 absolute  max-w-16 bottom-1 left-[48%] animate-bounce">
 
             <marquee  scrollamount="2" behavior="alternate" class=" top-12 absolute font-bold text-[490px] text-white opacity-25" direction="right">MONTEIRO
             </marquee>
-        <div class=" w-full brightness-75 h-[940px] relative -mt-[96px] -z-10 bg-cover  bg-[url('/./img/header/bginit.png')]">
+        <div class=" h-[940px] w-full brightness-75 relative -mt-[96px] -z-10 bg-cover  bg-[url('/./img/header/bginit.png')]">
             <div class=" bg-gradient-to-t from-[#474747] w-full h-full absolute"> </div>  
-        </div>     
-             
+        </div>
+    
+ 
     </nav>
+
+    <nav>
+        <div class="sm:block lg:hidden">
+
+            <img src="/./img/seta-para-baixo.png" alt="Seta"  class="z-40 absolute  max-w-16 bottom-24 left-[44%] animate-bounce">
+
+            <div class="h-[780px] w-full brightness-75 relative -mt-[96px] -z-10 bg-bottom bg-[url('/./img/header/bginit2.png')]"></div>
+        </div>
+    </nav>
+
 
     <section class=" flex mt-28">
         <div class=" mx-auto container">
@@ -192,6 +262,6 @@
         </div>
             </footer>
 
-     
+            <script type="text/javascript" src="sidebar.js"></script>
 </body>
 </html>
